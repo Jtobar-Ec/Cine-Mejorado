@@ -4,6 +4,7 @@
 
 int main(int argc, char *argv[])
 {
+    // Geovanny listo!
     QApplication a(argc, argv);
     Principal w;
     w.show();
