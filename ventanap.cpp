@@ -12,3 +12,14 @@ VentanaP::~VentanaP()
 {
     delete ui;
 }
+
+void VentanaP::on_action_Salir_triggered()
+{
+    close();
+}
+
+void VentanaP::on_actionAcerca_de_triggered()
+{
+ Acerca *dialog = new Acerca(this);
+ dialog->exec();
+}
