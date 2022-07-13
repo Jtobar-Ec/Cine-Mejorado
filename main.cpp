@@ -1,4 +1,4 @@
-#include "principal.h"
+
 
 #include <QApplication>
 
@@ -9,7 +9,6 @@ int main(int argc, char *argv[])
     // Justin Participando
     // Sebastián Participando
     QApplication a(argc, argv);
-    Principal w;
-    w.show();
+
     return a.exec();
 }
