@@ -25,6 +25,7 @@ HEADERS += \
     ventanap.h
 
 FORMS += \
+    Sala.ui \
     acerca.ui \
     ventanap.ui
 
@@ -35,3 +36,6 @@ TRANSLATIONS += \
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    Recursos.qrc

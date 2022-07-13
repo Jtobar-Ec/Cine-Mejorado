@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>Recursos/4179295.jpg-c_310_420_x-f_jpg-q_x-xxyxx.jpg</file>
+        <file>Recursos/5059871.jpg</file>
+        <file>Recursos/5298328.jpg</file>
+        <file>Recursos/Avengers-4-fan-poster-9.webp</file>
+        <file>Recursos/Godzilla_vs_Kong-370227109-large.jpg</file>
+    </qresource>
+</RCC>
