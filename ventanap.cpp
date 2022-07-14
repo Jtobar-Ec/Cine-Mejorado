@@ -23,3 +23,8 @@ void VentanaP::on_actionAcerca_de_triggered()
  Acerca *dialog = new Acerca(this);
  dialog->exec();
 }
+
+void VentanaP::on_pushButton_clicked()
+{
+
+}

@@ -18,15 +18,17 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
     acerca.cpp \
     main.cpp \
+    sala.cpp \
     ventanap.cpp
 
 HEADERS += \
     acerca.h \
+    sala.h \
     ventanap.h
 
 FORMS += \
-    Sala.ui \
     acerca.ui \
+    sala.ui \
     ventanap.ui
 
 TRANSLATIONS += \

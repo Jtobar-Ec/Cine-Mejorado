@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include "acerca.h"
+#include "ui_Sala.h"
 
 namespace Ui {class VentanaP;}
 
@@ -18,6 +19,8 @@ private slots:
     void on_action_Salir_triggered();
 
     void on_actionAcerca_de_triggered();
+
+    void on_pushButton_clicked();
 
 private:
     Ui::VentanaP *ui;
