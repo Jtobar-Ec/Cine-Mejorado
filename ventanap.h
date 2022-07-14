@@ -3,7 +3,7 @@
 
 #include <QMainWindow>
 #include "acerca.h"
-#include "ui_Sala.h"
+#include "sala.h"
 
 namespace Ui {class VentanaP;}
 
