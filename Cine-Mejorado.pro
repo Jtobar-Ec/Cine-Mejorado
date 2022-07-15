@@ -28,8 +28,8 @@ HEADERS += \
 
 FORMS += \
     acerca.ui \
-    sala.ui \
-    ventanap.ui
+    ventanap.ui \
+    Sala.ui
 
 TRANSLATIONS += \
     Cine-Mejorado_en_150.ts
