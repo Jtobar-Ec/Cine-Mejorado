@@ -22,6 +22,16 @@ private slots:
 
     void on_pushButton_clicked();
 
+    void on_pbCompra1_clicked();
+
+    void on_pbCompra2_clicked();
+
+    void on_pbCompra3_clicked();
+
+    void on_pbCompra4_clicked();
+
+    void on_pbComprar5_clicked();
+
 private:
     Ui::VentanaP *ui;
 };

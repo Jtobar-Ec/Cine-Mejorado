@@ -130,11 +130,11 @@
      <string/>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_2">
+   <widget class="QPushButton" name="pbCompra2">
     <property name="geometry">
      <rect>
-      <x>140</x>
-      <y>190</y>
+      <x>130</x>
+      <y>350</y>
       <width>131</width>
       <height>21</height>
      </rect>
@@ -143,7 +143,7 @@
      <string>Rapidos y Furiosos 9</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_3">
+   <widget class="QPushButton" name="pbCompra3">
     <property name="geometry">
      <rect>
       <x>130</x>
@@ -156,11 +156,11 @@
      <string>Avengers EndGame</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_4">
+   <widget class="QPushButton" name="pbComprar5">
     <property name="geometry">
      <rect>
-      <x>470</x>
-      <y>190</y>
+      <x>480</x>
+      <y>370</y>
       <width>131</width>
       <height>21</height>
      </rect>
@@ -169,11 +169,11 @@
      <string>Godzilla vs Kong</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_5">
+   <widget class="QPushButton" name="pbCompra4">
     <property name="geometry">
      <rect>
-      <x>480</x>
-      <y>370</y>
+      <x>470</x>
+      <y>200</y>
       <width>141</width>
       <height>21</height>
      </rect>
@@ -221,11 +221,11 @@
      <string>SIPNOSIS: ............................................</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="pbCompra1">
     <property name="geometry">
      <rect>
-      <x>120</x>
-      <y>350</y>
+      <x>130</x>
+      <y>190</y>
       <width>151</width>
       <height>21</height>
      </rect>
@@ -338,7 +338,7 @@
      <x>0</x>
      <y>0</y>
      <width>821</width>
-     <height>22</height>
+     <height>20</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuArchivos">
