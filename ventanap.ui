@@ -14,7 +14,7 @@
    <string>MainWindow</string>
   </property>
   <property name="windowIcon">
-   <iconset>
+   <iconset resource="Recursos.qrc">
     <normaloff>:/new/prefix1/Recursos/Recurso 3@4x.png</normaloff>:/new/prefix1/Recursos/Recurso 3@4x.png</iconset>
   </property>
   <property name="styleSheet">
@@ -276,7 +276,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>15:00 14:00 16:00</string>
+     <string>14:00 16:00 18:00</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_13">
@@ -289,7 +289,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>15:00 14:00 16:00</string>
+     <string>14:00 16:00 18:00</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_14">
@@ -302,7 +302,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>15:00 14:00 16:00</string>
+     <string>14:00 16:00 18:00</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_15">
@@ -315,7 +315,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>15:00 14:00 16:00</string>
+     <string>14:00 16:00 18:00</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_16">
@@ -328,7 +328,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>15:00 14:00 16:00</string>
+     <string>14:00 16:00 18:00</string>
     </property>
    </widget>
   </widget>
@@ -338,7 +338,7 @@
      <x>0</x>
      <y>0</y>
      <width>821</width>
-     <height>26</height>
+     <height>25</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuArchivos">
@@ -374,6 +374,8 @@
    </property>
   </action>
  </widget>
- <resources/>
+ <resources>
+  <include location="Recursos.qrc"/>
+ </resources>
  <connections/>
 </ui>

@@ -8,7 +8,8 @@
 #include <QMessageBox>
 #include <QDir>
 
-#include <compra.h>>
+
+#include "compra.h"
 
 namespace Ui {class Sala;}
 
@@ -20,16 +21,13 @@ public:
     explicit Sala(QWidget *parent = nullptr);
     ~Sala();
 
+
+
 private slots:
-    void on_OutBoletos_valueChanged(int arg1);
+    void on_OutCompra_clicked();
 
-    void on_Adultos_valueChanged(int arg1);
 
-    void on_NInos_valueChanged(int arg1);
-
-    void on_groupBox_2_clicked();
-
-    void on_pushButton_clicked();
+    void on_actionEliminar_triggered();
 
 private:
     Ui::Sala *ui;
