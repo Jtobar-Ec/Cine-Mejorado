@@ -17,12 +17,14 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     acerca.cpp \
+    compra.cpp \
     main.cpp \
     sala.cpp \
     ventanap.cpp
 
 HEADERS += \
     acerca.h \
+    compra.h \
     sala.h \
     ventanap.h
 

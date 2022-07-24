@@ -14,7 +14,7 @@
    <string>MainWindow</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="Recursos.qrc">
+   <iconset>
     <normaloff>:/new/prefix1/Recursos/Recurso 3@4x.png</normaloff>:/new/prefix1/Recursos/Recurso 3@4x.png</iconset>
   </property>
   <property name="styleSheet">
@@ -269,9 +269,9 @@
    <widget class="QLabel" name="label_12">
     <property name="geometry">
      <rect>
-      <x>130</x>
+      <x>140</x>
       <y>490</y>
-      <width>101</width>
+      <width>131</width>
       <height>16</height>
      </rect>
     </property>
@@ -282,9 +282,9 @@
    <widget class="QLabel" name="label_13">
     <property name="geometry">
      <rect>
-      <x>120</x>
+      <x>140</x>
       <y>330</y>
-      <width>101</width>
+      <width>131</width>
       <height>16</height>
      </rect>
     </property>
@@ -297,7 +297,7 @@
      <rect>
       <x>140</x>
       <y>170</y>
-      <width>101</width>
+      <width>151</width>
       <height>16</height>
      </rect>
     </property>
@@ -308,9 +308,9 @@
    <widget class="QLabel" name="label_15">
     <property name="geometry">
      <rect>
-      <x>470</x>
+      <x>480</x>
       <y>170</y>
-      <width>101</width>
+      <width>151</width>
       <height>16</height>
      </rect>
     </property>
@@ -321,9 +321,9 @@
    <widget class="QLabel" name="label_16">
     <property name="geometry">
      <rect>
-      <x>480</x>
+      <x>490</x>
       <y>350</y>
-      <width>101</width>
+      <width>141</width>
       <height>16</height>
      </rect>
     </property>
@@ -338,7 +338,7 @@
      <x>0</x>
      <y>0</y>
      <width>821</width>
-     <height>20</height>
+     <height>26</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuArchivos">
@@ -374,8 +374,6 @@
    </property>
   </action>
  </widget>
- <resources>
-  <include location="Recursos.qrc"/>
- </resources>
+ <resources/>
  <connections/>
 </ui>
