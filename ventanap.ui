@@ -18,7 +18,7 @@
     <normaloff>:/new/prefix1/Recursos/Recurso 3@4x.png</normaloff>:/new/prefix1/Recursos/Recurso 3@4x.png</iconset>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(255, 211, 211);</string>
+   <string notr="true">background-color: rgb(216, 255, 225);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QWidget" name="Encabezado" native="true">
@@ -139,6 +139,9 @@
       <height>21</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(247, 255, 160);</string>
+    </property>
     <property name="text">
      <string>Rapidos y Furiosos 9</string>
     </property>
@@ -151,6 +154,9 @@
       <width>151</width>
       <height>21</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(247, 255, 160);</string>
     </property>
     <property name="text">
      <string>Avengers EndGame</string>
@@ -165,6 +171,9 @@
       <height>21</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(247, 255, 160);</string>
+    </property>
     <property name="text">
      <string>Godzilla vs Kong</string>
     </property>
@@ -177,6 +186,9 @@
       <width>141</width>
       <height>21</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(247, 255, 160);</string>
     </property>
     <property name="text">
      <string>Spiral</string>
@@ -235,6 +247,9 @@
       <family>MS PGothic</family>
       <pointsize>10</pointsize>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(247, 255, 160);</string>
     </property>
     <property name="text">
      <string>Minions</string>
@@ -338,7 +353,7 @@
      <x>0</x>
      <y>0</y>
      <width>821</width>
-     <height>25</height>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuArchivos">

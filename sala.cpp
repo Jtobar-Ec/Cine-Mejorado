@@ -11,10 +11,10 @@ Sala::Sala(QWidget *parent) :
 {
     ui->setupUi(this);
     // Lista de productos
-    cargarProductos();
+    cargarHorarios();
     // Mostrar los productos en el combo
-    foreach (Compra *p, m_productos){
-        ui->InHorario->addItem(p->nombre());
+    foreach (Compra *p, m_Horarios){
+        ui->InHorario->addItem(p->nombre()+":"+QString::number(p->precio()));
     }
     // Configurar cabecera de la tabla
     QStringList cabecera = {"ID", "N.Personas", "Asientos", "Horario"};
@@ -29,32 +29,29 @@ Sala::~Sala()
     delete ui;
 }
 
-void Sala::cargarProductos()
+void Sala::cargarHorarios()
 {
-    // Crear productos "quemados" en el código
-    m_productos.append(new Compra(1, "14:00", 0.80));
-    m_productos.append(new Compra(2, "16:00", 0.15));
-    m_productos.append(new Compra(3, "18:00", 2.50));
+
 // Podría leerse de una base de datos, de un archivo o incluso de Internet
     QDir actual= QDir::current();
-    QString archivoProductos= actual.absolutePath()+"/debug/Productos.csv";
-    QFile archivo(archivoProductos);
+    QString archivoHorarios= actual.absolutePath()+"/debug/Horarios.csv";
+    QFile archivo(archivoHorarios);
 
     if (archivo.open(QIODevice::ReadOnly | QIODevice::Text)){
         bool primera =true;
-        QTextStream in (&archivo);
-        while(in.atEnd()){
+        QTextStream in(&archivo);
+        while(!in.atEnd()){
+            QString linea = in.readLine();
             if(primera){
                 primera=false;
                 continue;
 
             }
-            QString linea= in.readLine();
-            QStringList datos= linea.split(":");
+            QStringList datos = linea.split(";");
             QString precio = datos.at(2);
-            float p= precio.toFloat();
+            float minutos= precio.toInt();
             int id= datos.at(0).toInt();
-            m_productos.append(new Compra(id,datos.at(1),p));
+            m_Horarios.append(new Compra(id,datos.at(1),minutos));
         }
         archivo.close();
 
@@ -79,7 +76,7 @@ void Sala::on_OutCompra_clicked()
     }
     // Obtener los datos de la GUI
     int i = ui->InHorario->currentIndex();
-    Compra *p = m_productos.at(i);
+    Compra *p = m_Horarios.at(i);
     QString msg="";
     // Calcular el subrotal del producto
     float persona = ui->Adultos->value()+ui->NInos->value();
@@ -136,12 +133,7 @@ void Sala::on_OutCompra_clicked()
 
 
     ui->OutPelis->setItem(fila,2,new QTableWidgetItem(msg));
-    ui->OutPelis->setItem(fila, 3, new QTableWidgetItem(p->nombre()));
-
-
-
-
-
+    ui->OutPelis->setItem(fila, 3, new QTableWidgetItem(p->nombre()+":"+QString::number(p->precio())));
 
 
 }

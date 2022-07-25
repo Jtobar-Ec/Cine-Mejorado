@@ -20,8 +20,6 @@ private slots:
 
     void on_actionAcerca_de_triggered();
 
-    void on_pushButton_clicked();
-
     void on_pbCompra1_clicked();
 
     void on_pbCompra2_clicked();

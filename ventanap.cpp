@@ -24,10 +24,6 @@ void VentanaP::on_actionAcerca_de_triggered()
  dialog->exec();
 }
 
-void VentanaP::on_pushButton_clicked()
-{
-
-}
 //Funciones con las cuales pasara de una ventana a otra
 
 void VentanaP::on_pbCompra1_clicked()
