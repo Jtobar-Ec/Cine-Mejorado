@@ -6,6 +6,7 @@ VentanaP::VentanaP(QWidget *parent) :
     ui(new Ui::VentanaP)
 {
     ui->setupUi(this);
+    setWindowTitle("CINEMANIASALE");
 }
 
 VentanaP::~VentanaP()

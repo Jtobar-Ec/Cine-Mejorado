@@ -10,6 +10,7 @@ Sala::Sala(QWidget *parent) :
     ui(new Ui::Sala)
 {
     ui->setupUi(this);
+    setWindowTitle("Sala de cine");
     // Lista de productos
     cargarHorarios();
     // Mostrar los productos en el combo
