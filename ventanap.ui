@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>821</width>
-    <height>686</height>
+    <height>702</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -133,8 +133,8 @@
    <widget class="QPushButton" name="pbCompra2">
     <property name="geometry">
      <rect>
-      <x>110</x>
-      <y>430</y>
+      <x>130</x>
+      <y>470</y>
       <width>131</width>
       <height>21</height>
      </rect>
@@ -150,7 +150,7 @@
     <property name="geometry">
      <rect>
       <x>130</x>
-      <y>620</y>
+      <y>640</y>
       <width>151</width>
       <height>21</height>
      </rect>
@@ -166,7 +166,7 @@
     <property name="geometry">
      <rect>
       <x>480</x>
-      <y>430</y>
+      <y>470</y>
       <width>131</width>
       <height>21</height>
      </rect>
@@ -181,8 +181,8 @@
    <widget class="QPushButton" name="pbCompra4">
     <property name="geometry">
      <rect>
-      <x>470</x>
-      <y>230</y>
+      <x>480</x>
+      <y>250</y>
       <width>141</width>
       <height>21</height>
      </rect>
@@ -237,7 +237,7 @@
     <property name="geometry">
      <rect>
       <x>130</x>
-      <y>230</y>
+      <y>260</y>
       <width>151</width>
       <height>21</height>
      </rect>
@@ -285,7 +285,7 @@
     <property name="geometry">
      <rect>
       <x>130</x>
-      <y>600</y>
+      <y>620</y>
       <width>131</width>
       <height>16</height>
      </rect>
@@ -297,8 +297,8 @@
    <widget class="QLabel" name="label_13">
     <property name="geometry">
      <rect>
-      <x>120</x>
-      <y>410</y>
+      <x>130</x>
+      <y>440</y>
       <width>131</width>
       <height>16</height>
      </rect>
@@ -311,7 +311,7 @@
     <property name="geometry">
      <rect>
       <x>130</x>
-      <y>210</y>
+      <y>240</y>
       <width>151</width>
       <height>16</height>
      </rect>
@@ -323,8 +323,8 @@
    <widget class="QLabel" name="label_15">
     <property name="geometry">
      <rect>
-      <x>470</x>
-      <y>210</y>
+      <x>480</x>
+      <y>230</y>
       <width>151</width>
       <height>16</height>
      </rect>
@@ -337,7 +337,7 @@
     <property name="geometry">
      <rect>
       <x>480</x>
-      <y>410</y>
+      <y>450</y>
       <width>141</width>
       <height>16</height>
      </rect>
@@ -418,6 +418,101 @@
      <string>SALA 1</string>
     </property>
    </widget>
+   <widget class="QLabel" name="label_19">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>150</y>
+      <width>201</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Gru idea un plan para demostrarles que es lo suficientemente malvado como para trabajar con ellos. </string>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_20">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>140</y>
+      <width>201</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>toman las riendas de una investigación relacionada con una serie de asesinatos que albergan ciertos paralelismos con el sangriento.</string>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_21">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>350</y>
+      <width>201</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Dominic Torreto está intentando llevar una vida pacífica, refugiado en una cómoda casa en el campo, tratando de criar a su hijo pequeño Brian, con la ayuda de su novia Letty. </string>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_22">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>340</y>
+      <width>211</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Con el mundo todavía sacudido por la batalla entre Ghidorah y Godzilla, la humanidad ha comenzado a intentar coexistir con los Titanes. </string>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_23">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>530</y>
+      <width>201</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Retoma tras el final de 'Vengadores: Infinity War', en el que fuimos testigos de cómo Thanos conseguía hacerse con las Gemas del Infinito </string>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -425,7 +520,7 @@
      <x>0</x>
      <y>0</y>
      <width>821</width>
-     <height>21</height>
+     <height>22</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuArchivos">
