@@ -4,8 +4,6 @@
 #include <QDialog>
 
 
-
-
 namespace Ui {
 class Acerca;
 }

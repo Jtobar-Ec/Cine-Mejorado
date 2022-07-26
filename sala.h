@@ -12,6 +12,8 @@
 
 #include "compra.h"
 
+#define IVA 12
+
 namespace Ui {class Sala;}
 
 class Sala : public QMainWindow
@@ -22,20 +24,20 @@ public:
     explicit Sala(QWidget *parent = nullptr);
     ~Sala();
 
-
-
 private slots:
     void on_OutCompra_clicked();
 
     void on_actionEliminar_triggered();
 
+    void on_InHorario_currentIndexChanged(int index);
+
+    void on_actionNuevo_triggered();
+
 private:
     Ui::Sala *ui;
-
     QList<Compra*> m_Horarios;
     void cargarHorarios();
     float m_subtotal;
-
     void calcular(float stProducto);
 };
 

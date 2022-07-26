@@ -13,6 +13,9 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(217, 223, 255);</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout">
     <item row="0" column="0">
@@ -23,10 +26,20 @@
       <layout class="QGridLayout" name="gridLayout_4">
        <item row="0" column="0">
         <widget class="QGroupBox" name="groupBox">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(253, 255, 230);</string>
+         </property>
          <property name="title">
           <string>Boleto</string>
          </property>
          <layout class="QGridLayout" name="gridLayout_3">
+          <item row="6" column="0">
+           <widget class="QLabel" name="label_9">
+            <property name="text">
+             <string>TOTAL</string>
+            </property>
+           </widget>
+          </item>
           <item row="0" column="0">
            <widget class="QLabel" name="label_3">
             <property name="text">
@@ -34,17 +47,10 @@
             </property>
            </widget>
           </item>
-          <item row="0" column="1">
-           <widget class="QComboBox" name="InHorario">
-            <property name="currentText">
-             <string/>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="0">
-           <widget class="QLabel" name="label_5">
+          <item row="5" column="0">
+           <widget class="QLabel" name="label_8">
             <property name="text">
-             <string>Adulto</string>
+             <string>IVA</string>
             </property>
            </widget>
           </item>
@@ -55,10 +61,10 @@
             </property>
            </widget>
           </item>
-          <item row="2" column="0">
-           <widget class="QLabel" name="label_6">
+          <item row="4" column="0">
+           <widget class="QLabel" name="label_7">
             <property name="text">
-             <string>Niños</string>
+             <string>Subtotal</string>
             </property>
            </widget>
           </item>
@@ -66,6 +72,62 @@
            <widget class="QSpinBox" name="NInos">
             <property name="maximum">
              <number>10</number>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QComboBox" name="InHorario">
+            <property name="currentText">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="label">
+            <property name="text">
+             <string>Precio</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="label_6">
+            <property name="text">
+             <string>Niños</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="1">
+           <widget class="QLabel" name="outIva">
+            <property name="text">
+             <string>0.0</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="label_5">
+            <property name="text">
+             <string>Adulto</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1">
+           <widget class="QLabel" name="outSubtotal">
+            <property name="text">
+             <string>0.0</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QLabel" name="outPrecio">
+            <property name="text">
+             <string>0.0</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="1">
+           <widget class="QLabel" name="outTotal">
+            <property name="text">
+             <string>0.0</string>
             </property>
            </widget>
           </item>
@@ -262,6 +324,47 @@
            <string/>
           </property>
          </widget>
+         <widget class="QLabel" name="label_2">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>415</y>
+            <width>501</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(0, 0, 0);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_4">
+          <property name="geometry">
+           <rect>
+            <x>240</x>
+            <y>420</y>
+            <width>91</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+</string>
+          </property>
+          <property name="text">
+           <string>PANTALLA</string>
+          </property>
+         </widget>
         </widget>
        </item>
        <item row="1" column="0">
@@ -274,7 +377,7 @@
        <item row="1" column="1">
         <widget class="QPushButton" name="pushButton_2">
          <property name="text">
-          <string>Confirmar</string>
+          <string>Imprimir</string>
          </property>
         </widget>
        </item>
