@@ -12,7 +12,7 @@ Sala::Sala(QWidget *parent) :
     ui(new Ui::Sala)
 {
     ui->setupUi(this);
-    setWindowTitle("Sala de cine");
+    setWindowTitle("Compra");
     // Lista de productos
     cargarHorarios();
     // Mostrar los productos en el combo
@@ -277,6 +277,7 @@ void Sala::on_OutCompra_clicked()
     int AdulCAn = ui->Adultos->value();
     int NinCan=ui->NInos->value();
 
+
     //validación
     if (AdulCAn==false && NinCan==false){
        return;
@@ -307,7 +308,7 @@ void Sala::on_OutCompra_clicked()
     // Agregar los datos a la tabla
     int fila = ui->OutPelis->rowCount();
     ui->OutPelis->insertRow(fila);
-    ui->OutPelis->setItem(fila, 0, new QTableWidgetItem(QString::number(1)));
+    ui->OutPelis->setItem(fila, 0, new QTableWidgetItem(QString::number(i)));
     ui->OutPelis->setItem(fila, 1, new QTableWidgetItem(QString::number((AdulCAn+NinCan),'f',0)));
     msg="";
 

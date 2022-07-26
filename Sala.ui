@@ -14,7 +14,7 @@
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(217, 223, 255);</string>
+   <string notr="true">background-color: rgb(255, 164, 166);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout">
@@ -26,20 +26,29 @@
       <layout class="QGridLayout" name="gridLayout_2">
        <item row="1" column="0">
         <widget class="QPushButton" name="OutCompra">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(0, 0, 0);</string>
+         </property>
          <property name="text">
           <string>Aceptar</string>
          </property>
         </widget>
        </item>
-       <item row="1" column="2">
+       <item row="1" column="1">
         <widget class="QPushButton" name="btnFactura">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(0, 0, 0);</string>
+         </property>
          <property name="text">
           <string>Factura</string>
          </property>
         </widget>
        </item>
-       <item row="0" column="0" colspan="3">
+       <item row="0" column="0" colspan="2">
         <widget class="QGroupBox" name="groupBox_4">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(209, 0, 3);</string>
+         </property>
          <property name="title">
           <string/>
          </property>
@@ -222,7 +231,7 @@
          <widget class="QLabel" name="label_4">
           <property name="geometry">
            <rect>
-            <x>240</x>
+            <x>250</x>
             <y>420</y>
             <width>91</width>
             <height>20</height>
@@ -231,7 +240,6 @@
           <property name="font">
            <font>
             <pointsize>12</pointsize>
-            <weight>75</weight>
             <bold>true</bold>
            </font>
           </property>
@@ -241,16 +249,9 @@ background-color: rgb(0, 0, 0);
 </string>
           </property>
           <property name="text">
-           <string>PANTALLA</string>
+           <string>BUTACAS</string>
           </property>
          </widget>
-        </widget>
-       </item>
-       <item row="1" column="1">
-        <widget class="QPushButton" name="pushButton">
-         <property name="text">
-          <string>Consumidor Final</string>
-         </property>
         </widget>
        </item>
       </layout>
@@ -258,6 +259,9 @@ background-color: rgb(0, 0, 0);
     </item>
     <item row="0" column="0">
      <widget class="QGroupBox" name="groupBox_3">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 140, 142);</string>
+      </property>
       <property name="title">
        <string/>
       </property>
@@ -271,7 +275,7 @@ background-color: rgb(0, 0, 0);
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true">background-color: rgb(253, 255, 230);</string>
+        <string notr="true">background-color: rgb(253, 255, 230); color: rgb(0, 0, 0);</string>
        </property>
        <property name="title">
         <string>Boleto</string>
@@ -279,6 +283,9 @@ background-color: rgb(0, 0, 0);
        <layout class="QGridLayout" name="gridLayout_3">
         <item row="6" column="0">
          <widget class="QLabel" name="label_9">
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);</string>
+          </property>
           <property name="text">
            <string>TOTAL</string>
           </property>
@@ -286,6 +293,9 @@ background-color: rgb(0, 0, 0);
         </item>
         <item row="0" column="0">
          <widget class="QLabel" name="label_3">
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);</string>
+          </property>
           <property name="text">
            <string>Horario</string>
           </property>
@@ -293,6 +303,9 @@ background-color: rgb(0, 0, 0);
         </item>
         <item row="5" column="0">
          <widget class="QLabel" name="label_8">
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);</string>
+          </property>
           <property name="text">
            <string>IVA</string>
           </property>
@@ -307,6 +320,9 @@ background-color: rgb(0, 0, 0);
         </item>
         <item row="4" column="0">
          <widget class="QLabel" name="label_7">
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);</string>
+          </property>
           <property name="text">
            <string>Subtotal</string>
           </property>
@@ -328,6 +344,9 @@ background-color: rgb(0, 0, 0);
         </item>
         <item row="3" column="0">
          <widget class="QLabel" name="label">
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);</string>
+          </property>
           <property name="text">
            <string>Precio</string>
           </property>
@@ -335,6 +354,9 @@ background-color: rgb(0, 0, 0);
         </item>
         <item row="2" column="0">
          <widget class="QLabel" name="label_6">
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);</string>
+          </property>
           <property name="text">
            <string>Niños</string>
           </property>
@@ -349,6 +371,9 @@ background-color: rgb(0, 0, 0);
         </item>
         <item row="1" column="0">
          <widget class="QLabel" name="label_5">
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);</string>
+          </property>
           <property name="text">
            <string>Adulto</string>
           </property>
@@ -380,12 +405,15 @@ background-color: rgb(0, 0, 0);
       <widget class="QTableWidget" name="OutPelis">
        <property name="geometry">
         <rect>
-         <x>20</x>
-         <y>330</y>
-         <width>521</width>
-         <height>192</height>
+         <x>0</x>
+         <y>351</y>
+         <width>551</width>
+         <height>171</height>
         </rect>
        </property>
+       <attribute name="horizontalHeaderDefaultSectionSize">
+        <number>110</number>
+       </attribute>
       </widget>
       <widget class="QGroupBox" name="groupBox_5">
        <property name="geometry">
@@ -397,7 +425,7 @@ background-color: rgb(0, 0, 0);
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true">background-color: rgb(253, 255, 230);</string>
+        <string notr="true">background-color: rgb(253, 255, 230);color: rgb(0, 0, 0);</string>
        </property>
        <property name="title">
         <string>Datos de Factura</string>
@@ -405,6 +433,9 @@ background-color: rgb(0, 0, 0);
        <layout class="QGridLayout" name="gridLayout_4">
         <item row="0" column="0">
          <widget class="QLabel" name="label_10">
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);</string>
+          </property>
           <property name="text">
            <string>Nombre:</string>
           </property>
@@ -415,6 +446,9 @@ background-color: rgb(0, 0, 0);
         </item>
         <item row="1" column="0">
          <widget class="QLabel" name="label_11">
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);</string>
+          </property>
           <property name="text">
            <string>CI:</string>
           </property>
@@ -425,6 +459,9 @@ background-color: rgb(0, 0, 0);
         </item>
         <item row="2" column="0">
          <widget class="QLabel" name="label_12">
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);</string>
+          </property>
           <property name="text">
            <string>Teléfono:</string>
           </property>
@@ -435,6 +472,9 @@ background-color: rgb(0, 0, 0);
         </item>
         <item row="3" column="0">
          <widget class="QLabel" name="label_13">
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);</string>
+          </property>
           <property name="text">
            <string>Correo:</string>
           </property>
@@ -445,6 +485,9 @@ background-color: rgb(0, 0, 0);
         </item>
         <item row="4" column="0">
          <widget class="QLabel" name="label_14">
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);</string>
+          </property>
           <property name="text">
            <string>Dirección:</string>
           </property>
@@ -465,7 +508,7 @@ background-color: rgb(0, 0, 0);
      <x>0</x>
      <y>0</y>
      <width>1136</width>
-     <height>21</height>
+     <height>25</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuArchivo">
@@ -473,7 +516,6 @@ background-color: rgb(0, 0, 0);
      <string>Archivo</string>
     </property>
     <addaction name="actionNuevo"/>
-    <addaction name="actionEliminar"/>
    </widget>
    <addaction name="menuArchivo"/>
   </widget>
@@ -481,11 +523,6 @@ background-color: rgb(0, 0, 0);
   <action name="actionNuevo">
    <property name="text">
     <string>Nuevo</string>
-   </property>
-  </action>
-  <action name="actionEliminar">
-   <property name="text">
-    <string>Eliminar</string>
    </property>
   </action>
  </widget>
