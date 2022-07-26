@@ -18,6 +18,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
     acerca.cpp \
     compra.cpp \
+    factura.cpp \
     main.cpp \
     sala.cpp \
     ventanap.cpp
@@ -25,11 +26,13 @@ SOURCES += \
 HEADERS += \
     acerca.h \
     compra.h \
+    factura.h \
     sala.h \
     ventanap.h
 
 FORMS += \
     acerca.ui \
+    factura.ui \
     ventanap.ui \
     Sala.ui
 

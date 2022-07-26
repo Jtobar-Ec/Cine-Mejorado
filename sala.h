@@ -11,6 +11,7 @@
 
 
 #include "compra.h"
+#include "factura.h"
 
 #define IVA 12
 
@@ -33,12 +34,22 @@ private slots:
 
     void on_actionNuevo_triggered();
 
+    void on_btnFactura_pressed();
+
 private:
     Ui::Sala *ui;
     QList<Compra*> m_Horarios;
-    void cargarHorarios();
+    QString m_detalles;
     float m_subtotal;
+    float m_iva;
+    float m_total;
+    int m_contador = 0;
+
+    void cargarHorarios();
     void calcular(float stProducto);
+    void enviarDatos();
+    bool validarCampos();
+    bool validarCI(QString num);
 };
 
 #endif // SALA_H

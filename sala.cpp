@@ -81,9 +81,196 @@ void Sala::calcular(float stProducto)
     ui->outTotal->setText("$ " + QString::number(total, 'f', 2));
 }
 
+void Sala::enviarDatos()
+{
+    int filas = ui->OutPelis->rowCount();
+    QString detalles = "";
+    while (m_contador!=filas) {
+        detalles+="\t"+ui->OutPelis->item(m_contador,0)->text()+"\t   " +
+                ui->OutPelis->item(m_contador,1)->text()+"\t          " +
+                ui->OutPelis->item(m_contador,2)->text()+"\t                    " +
+                ui->OutPelis->item(m_contador,3)->text()+"\t                " +
+                ui->OutPelis->item(m_contador,4)->text()+"\t\t\n";
+        m_contador++;
+    }
+    m_detalles = detalles;
+}
+
+bool Sala::validarCampos()
+{
+    if(validarCI(ui->inCi->text())==true && ui->inCi->text()!="9999999999"){
+
+            ui->inCi->setStyleSheet("QLineEdit{ background-color: green}");
+
+            if(ui->inNombre->text()==""){
+                ui->inNombre->setStyleSheet("QLineEdit{ background-color: orange}");
+            }else{
+                ui->inNombre->setStyleSheet("QLineEdit{ background-color: green}");
+            }
+            if(ui->inTelefono->text()==""){
+                ui->inTelefono->setStyleSheet("QLineEdit{ background-color: orange}");
+            }else{
+                ui->inTelefono->setStyleSheet("QLineEdit{ background-color: green}");
+            }
+            if(ui->inEmail->text()==""){
+                ui->inEmail->setStyleSheet("QLineEdit{ background-color: orange}");
+            }else{
+                ui->inEmail->setStyleSheet("QLineEdit{ background-color: green}");
+            }
+            if(ui->inDireccion->toPlainText()==""){
+                ui->inDireccion->setStyleSheet("QPlainTextEdit {background-color: orange}");
+            }else{
+                ui->inDireccion->setStyleSheet("QPlainTextEdit {background-color: green}");
+            }
+            if(ui->inCi->text()=="" || ui->inNombre->text()=="" || ui->inTelefono->text()=="" || ui->inEmail->text()==""||ui->inDireccion->toPlainText()==""){
+                return false;
+            }
+            if(ui->inCi->text()!="" && ui->inNombre->text()!="" && ui->inTelefono->text()!="" && ui->inEmail->text()!="" && ui->inDireccion->toPlainText()!=""){
+                return true;
+            }
+        }else if(ui->inCi->text()=="9999999999"){
+            return true;
+        }else{
+            if(validarCI(ui->inCi->text())==false){
+                ui->inCi->setStyleSheet("QLineEdit{ background-color: orange}");
+                return false;
+            }
+        }
+        return true;
+}
+
+bool Sala::validarCI(QString num)
+{
+    bool est = true;
+        int vcedula[10];
+        int vPar[4];
+        int vImpar[5]={0};
+        int sumaPar=0;
+        int sumaImpar=0;
+        int total;
+        int nveri;
+
+        double nu;
+
+        if(num=="9999999999"){
+            return true;
+        }
+
+        do
+        {
+            nu=num.toInt();
+            if(nu<100000000 || nu>9999999999)
+            {
+
+                est=false;
+                break;
+            }
+
+
+            //Separar string
+            QString p1=num.mid(0,1);
+            QString p2=num.mid(1,1);
+            QString p3=num.mid(2,1);
+            QString p4=num.mid(3,1);
+            QString p5=num.mid(4,1);
+            QString p6=num.mid(5,1);
+            QString p7=num.mid(6,1);
+            QString p8=num.mid(7,1);
+            QString p9=num.mid(8,1);
+            QString p10=num.mid(9,1);
+
+            //Transformar string
+            vcedula[0]=p1.toInt();
+            vcedula[1]=p2.toInt();
+            vcedula[2]=p3.toInt();
+            vcedula[3]=p4.toInt();
+            vcedula[4]=p5.toInt();
+            vcedula[5]=p6.toInt();
+            vcedula[6]=p7.toInt();
+            vcedula[7]=p8.toInt();
+            vcedula[8]=p9.toInt();
+            vcedula[9]=p10.toInt();
+
+            if(vcedula[0]>2)
+            {
+
+                est = false;
+                break;
+            }
+
+            //Pares
+            vPar[0]=vcedula[1];
+            vPar[1]=vcedula[3];
+            vPar[2]=vcedula[5];
+            vPar[3]=vcedula[7];
+            //Impares
+            vImpar[0]=vcedula[0];
+            vImpar[1]=vcedula[2];
+            vImpar[2]=vcedula[4];
+            vImpar[3]=vcedula[6];
+            vImpar[4]=vcedula[8];
+
+
+            //Multiplicacion impar
+            for(int i=0; i<5; i++)
+            {
+                vImpar[i]=vImpar[i]*2;
+                if(vImpar[i]>9)
+                {
+                    vImpar[i]=vImpar[i]-9;
+                }
+                sumaImpar += vImpar[i];
+            }
+            //Sumar los pares
+            for(int i=0; i<4; i++)
+            {
+                sumaPar += vPar[i];
+            }
+
+            total = sumaPar + sumaImpar;
+
+            //Se obtiene el modulo
+
+            nveri = total%10;
+
+
+            //Numero verificador
+            if(nveri==0)
+            {
+                if(nveri==vcedula[9])
+                {
+                    est=true;
+                    break;
+                }else
+                {
+                    est=false;
+                    break;
+                }
+            }else if(nveri !=0)
+            {
+                nveri=10-nveri;
+
+                if(nveri==vcedula[9])
+                {
+                    est=true;
+                    break;
+                }else
+                {
+
+                    est=false;
+                    break;
+                }
+            }
+
+        }while(nu<100000000 || nu>9999999999 || vcedula[0]>2);
+        return est;
+
+}
+
 
 void Sala::on_OutCompra_clicked()
 {
+
     bool A1,A2,A3,A4,B1,B2,B3,B4,C1,C2;
 
     // Validar que no se agrege 0 cantidad
@@ -190,10 +377,61 @@ void Sala::on_actionNuevo_triggered()
         while(ui->OutPelis->rowCount()>0){
             ui->OutPelis->removeRow(0);
         }
-    ui->Adultos->clear();
-    ui->NInos->clear();
-    ui->outSubtotal->clear();
-    ui->outIva->clear();
-    ui->outTotal->clear();
+        ui->Adultos->clear();
+        ui->NInos->clear();
+        ui->outSubtotal->clear();
+        ui->outIva->clear();
+        ui->outTotal->clear();
+        ui->inNombre->clear();
+        ui->inCi->clear();
+        ui->inDireccion->clear();
+        ui->inEmail->clear();
+        ui->inTelefono->clear();
+
+        m_subtotal=0;
+
+        ui->outSubtotal->setText("$ 0.00");
+        ui->outIva->setText("$ 0.00");
+        ui->outTotal->setText("$ 0.00");
+        ui->inCi->setStyleSheet("QLineEdit{ background-color: white}");
+        ui->inNombre->setStyleSheet("QLineEdit{ background-color: white}");
+        ui->inTelefono->setStyleSheet("QLineEdit{ background-color: white}");
+        ui->inEmail->setStyleSheet("QLineEdit{ background-color: white}");
+        ui->inDireccion->setStyleSheet("QPlainTextEdit {background-color: white}");
+        m_detalles="";
+        m_contador=0;
+
 }
 
+
+
+
+
+void Sala::on_btnFactura_pressed()
+{
+    if(validarCampos()==true){
+    Factura *factura = new Factura(this);
+    enviarDatos();
+    if(ui->inCi->text()!="9999999999"){
+                factura->datosfac(ui->inCi->text(),ui->inNombre->text(),
+                                      ui->inTelefono->text(),ui->inEmail->text(),
+                                      ui->inDireccion->toPlainText(),m_detalles);
+            }else{
+                QString nombre= "Consumidor Final";
+                QString telefono="**********";
+                QString email="***********@gmail.com";
+                QString direccion="***************";
+                factura->datosfac(ui->inCi->text(),nombre,
+                                      telefono,email,
+                                      direccion,m_detalles);
+            }
+
+
+            factura->datosPrecios(m_subtotal,m_iva,m_total);
+            if(m_contador !=0){
+                factura->cargarDatos();
+                factura->exec();
+                on_actionNuevo_triggered();
+            }
+    }
+ }
