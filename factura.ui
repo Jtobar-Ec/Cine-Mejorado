@@ -25,8 +25,8 @@
    <widget class="QDialogButtonBox" name="buttonBox">
     <property name="geometry">
      <rect>
-      <x>130</x>
-      <y>470</y>
+      <x>120</x>
+      <y>480</y>
       <width>461</width>
       <height>32</height>
      </rect>
@@ -234,7 +234,7 @@
    <widget class="QLabel" name="label_9">
     <property name="geometry">
      <rect>
-      <x>30</x>
+      <x>220</x>
       <y>280</y>
       <width>151</width>
       <height>16</height>
@@ -253,17 +253,29 @@
    <widget class="QPlainTextEdit" name="outDetallecompra">
     <property name="geometry">
      <rect>
-      <x>40</x>
-      <y>340</y>
-      <width>591</width>
-      <height>131</height>
+      <x>270</x>
+      <y>310</y>
+      <width>121</width>
+      <height>171</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(254, 255, 201);</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_10">
     <property name="geometry">
      <rect>
-      <x>110</x>
+      <x>240</x>
       <y>310</y>
       <width>31</width>
       <height>16</height>
@@ -276,16 +288,16 @@
      </font>
     </property>
     <property name="text">
-     <string>ID</string>
+     <string>ID:</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_11">
     <property name="geometry">
      <rect>
-      <x>170</x>
-      <y>310</y>
-      <width>101</width>
-      <height>16</height>
+      <x>160</x>
+      <y>350</y>
+      <width>111</width>
+      <height>20</height>
      </rect>
     </property>
     <property name="font">
@@ -295,15 +307,15 @@
      </font>
     </property>
     <property name="text">
-     <string>Nr. Personas</string>
+     <string>Nr. Personas:</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_12">
     <property name="geometry">
      <rect>
-      <x>310</x>
-      <y>310</y>
-      <width>71</width>
+      <x>190</x>
+      <y>390</y>
+      <width>81</width>
       <height>16</height>
      </rect>
     </property>
@@ -314,14 +326,14 @@
      </font>
     </property>
     <property name="text">
-     <string>Asientos</string>
+     <string>Asientos:</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_13">
     <property name="geometry">
      <rect>
-      <x>420</x>
-      <y>310</y>
+      <x>220</x>
+      <y>430</y>
       <width>51</width>
       <height>16</height>
      </rect>
@@ -333,14 +345,14 @@
      </font>
     </property>
     <property name="text">
-     <string>Hora</string>
+     <string>Hora:</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_14">
     <property name="geometry">
      <rect>
-      <x>530</x>
-      <y>310</y>
+      <x>190</x>
+      <y>460</y>
       <width>71</width>
       <height>20</height>
      </rect>
@@ -352,7 +364,20 @@
      </font>
     </property>
     <property name="text">
-     <string>Subtotal</string>
+     <string>Subtotal:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>220</y>
+      <width>47</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
     </property>
    </widget>
   </widget>
