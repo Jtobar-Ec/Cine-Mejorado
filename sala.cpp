@@ -20,7 +20,7 @@ Sala::Sala(QWidget *parent) :
         ui->InHorario->addItem(p->Hora()+":"+QString::number(p->minuto()));
     }
     // Configurar cabecera de la tabla
-    QStringList cabecera = {"ID", "N.Personas", "Asientos", "Horario", "Subtotal"};
+    QStringList cabecera = {"ID", tr("N.Personas"), tr("Asientos"), tr("Horario"), tr("Subtotal")};
     ui->OutPelis->setColumnCount(5);
     ui->OutPelis->setHorizontalHeaderLabels(cabecera);
     // Establecer el subtotal a 0
@@ -64,7 +64,7 @@ void Sala::cargarHorarios()
         archivo.close();
 
     }else{
-        qDebug()<<"No se pudo abrir el archivo";
+        qDebug()<<tr("No se pudo abrir el archivo");
     }
 }
 
@@ -417,14 +417,6 @@ void Sala::on_btnFactura_pressed()
                 factura->datosfac(ui->inCi->text(),ui->inNombre->text(),
                                       ui->inTelefono->text(),ui->inEmail->text(),
                                       ui->inDireccion->toPlainText(),m_detalles);
-            }else{
-                QString nombre= "Consumidor Final";
-                QString telefono="**********";
-                QString email="***********@gmail.com";
-                QString direccion="***************";
-                factura->datosfac(ui->inCi->text(),nombre,
-                                      telefono,email,
-                                      direccion,m_detalles);
             }
 
 

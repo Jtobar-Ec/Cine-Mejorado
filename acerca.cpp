@@ -6,7 +6,7 @@ Acerca::Acerca(QWidget *parent) :
     ui(new Ui::Acerca)
 {
     ui->setupUi(this);
-    setWindowTitle("Informacion");
+    setWindowTitle(tr("Informacion"));
 }
 
 Acerca::~Acerca()

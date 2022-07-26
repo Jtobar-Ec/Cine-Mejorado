@@ -15,7 +15,7 @@
   </property>
   <property name="windowIcon">
    <iconset resource="Recursos.qrc">
-    <normaloff>:/new/prefix1/Recursos/Recurso 3@4x.png</normaloff>:/new/prefix1/Recursos/Recurso 3@4x.png</iconset>
+    <normaloff>:/Recursos/Recurso 3@4x.png</normaloff>:/Recursos/Recurso 3@4x.png</iconset>
   </property>
   <property name="styleSheet">
    <string notr="true">background-color: rgb(216, 255, 225);</string>
@@ -60,7 +60,7 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">image: url(:/new/prefix1/Recursos/4179295.jpg-c_310_420_x-f_jpg-q_x-xxyxx.jpg);</string>
+     <string notr="true">image: url(:/Recursos/4179295.jpg-c_310_420_x-f_jpg-q_x-xxyxx.jpg);</string>
     </property>
     <property name="text">
      <string/>
@@ -76,7 +76,7 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">image: url(:/new/prefix1/Recursos/5059871.jpg);</string>
+     <string notr="true">image: url(:/Recursos/5059871.jpg);</string>
     </property>
     <property name="text">
      <string/>
@@ -92,7 +92,7 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">image: url(:/new/prefix1/Recursos/041_m.jpg);</string>
+     <string notr="true">image: url(:/Recursos/041_m.jpg);</string>
     </property>
     <property name="text">
      <string/>
@@ -108,7 +108,7 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">image: url(:/new/prefix1/Recursos/Godzilla_vs_Kong-370227109-large.jpg);</string>
+     <string notr="true">image: url(:/Recursos/Godzilla_vs_Kong-370227109-large.jpg);</string>
     </property>
     <property name="text">
      <string/>
@@ -124,7 +124,7 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">image: url(:/new/prefix1/Recursos/5298328.jpg);</string>
+     <string notr="true">image: url(:/Recursos/5298328.jpg);</string>
     </property>
     <property name="text">
      <string/>
@@ -520,7 +520,7 @@
      <x>0</x>
      <y>0</y>
      <width>821</width>
-     <height>22</height>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuArchivos">

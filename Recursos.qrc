@@ -1,5 +1,5 @@
 <RCC>
-    <qresource prefix="/new/prefix1">
+    <qresource prefix="/">
         <file>Recursos/4179295.jpg-c_310_420_x-f_jpg-q_x-xxyxx.jpg</file>
         <file>Recursos/5059871.jpg</file>
         <file>Recursos/5298328.jpg</file>
@@ -7,5 +7,6 @@
         <file>Recursos/sillon.png</file>
         <file>Recursos/Recurso 3@4x.png</file>
         <file>Recursos/041_m.jpg</file>
+        <file>Cine-Mejorado_en.qm</file>
     </qresource>
 </RCC>
