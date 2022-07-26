@@ -86,11 +86,11 @@ void Sala::enviarDatos()
     int filas = ui->OutPelis->rowCount();
     QString detalles = "";
     while (m_contador!=filas) {
-        detalles+="\t"+ui->OutPelis->item(m_contador,0)->text()+"\t   " +
-                ui->OutPelis->item(m_contador,1)->text()+"\t          " +
-                ui->OutPelis->item(m_contador,2)->text()+"\t                    " +
-                ui->OutPelis->item(m_contador,3)->text()+"\t                " +
-                ui->OutPelis->item(m_contador,4)->text()+"\t\t\n";
+        detalles+=ui->OutPelis->item(m_contador,0)->text()+"\n  \n\n" +
+                ui->OutPelis->item(m_contador,1)->text()+"  \n\n\n" +
+                ui->OutPelis->item(m_contador,2)->text()+"  \n\n\n" +
+                ui->OutPelis->item(m_contador,3)->text()+"  \n\n" +
+                ui->OutPelis->item(m_contador,4)->text()+"  ";
         m_contador++;
     }
     m_detalles = detalles;
