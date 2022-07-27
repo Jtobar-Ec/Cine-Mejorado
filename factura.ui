@@ -370,9 +370,9 @@
    <widget class="QLabel" name="label_15">
     <property name="geometry">
      <rect>
-      <x>190</x>
+      <x>210</x>
       <y>500</y>
-      <width>71</width>
+      <width>51</width>
       <height>20</height>
      </rect>
     </property>
@@ -383,7 +383,7 @@
      </font>
     </property>
     <property name="text">
-     <string>Subtotal:</string>
+     <string>Total:</string>
     </property>
    </widget>
   </widget>

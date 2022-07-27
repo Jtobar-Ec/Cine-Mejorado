@@ -29,8 +29,6 @@ public:
 private slots:
     void on_OutCompra_clicked();
 
-    void on_actionEliminar_triggered();
-
     void on_InHorario_currentIndexChanged(int index);
 
     void on_actionNuevo_triggered();

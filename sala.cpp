@@ -20,11 +20,12 @@ Sala::Sala(QWidget *parent) :
         ui->InHorario->addItem(p->Hora()+":"+QString::number(p->minuto()));
     }
     // Configurar cabecera de la tabla
-        QStringList cabecera = {"ID", tr("N.Personas"), tr("Asientos"), tr("Horario"), tr("Sala"), tr("Subtotal")};
+        QStringList cabecera = {"ID", tr("N.Personas"), tr("Asientos"), tr("Horario"), tr("Sala"), tr("Total")};
         ui->OutPelis->setColumnCount(6);
         ui->OutPelis->setHorizontalHeaderLabels(cabecera);
         // Establecer el subtotal a 0
         m_subtotal = 0;
+        m_total = 0;
 
 
 }
@@ -78,6 +79,7 @@ void Sala::calcular(float stProducto)
     m_subtotal += stProducto;
     float iva = m_subtotal * IVA /100;
     float total = m_subtotal + iva;
+
 
     //Moatrar en la GUI
     ui->outSubtotal->setText("$ "+ QString::number(m_subtotal, 'f',2));
@@ -299,6 +301,8 @@ void Sala::on_OutCompra_clicked()
     float persona = p->precio() * AdulCAn;
     float personapeque = p->precioInfa() * NinCan;
     float resultado = persona + personapeque;
+    float ivas2 = resultado * IVA/100;
+    m_total = resultado + ivas2;
 
     A1=ui->A1->isChecked();
     A2=ui->A2->isChecked();
@@ -359,7 +363,7 @@ void Sala::on_OutCompra_clicked()
         //Salas
         ui->OutPelis->setItem(fila, 4, new QTableWidgetItem(QString::number(p->sala())));
         //Precio
-        ui->OutPelis->setItem(fila, 5, new QTableWidgetItem(QString::number(resultado,'f',2)));
+        ui->OutPelis->setItem(fila, 5, new QTableWidgetItem(QString::number(m_total,'f',2)));
 
         //Limpiar valores
         ui->Adultos->setValue(0);
@@ -370,14 +374,9 @@ void Sala::on_OutCompra_clicked()
 
 }
 
-
-void Sala::on_actionEliminar_triggered()
-{
-     update();
-}
-
 void Sala::on_InHorario_currentIndexChanged(int index)
 {
+    //Visualización de Precio estandar de adulto y niño
     float precio = m_Horarios.at(index)->precio();
       float precio_inf = m_Horarios.at(index)->precioInfa();
       ui->outPrecio->setText("$ "+QString::number(precio,'f',2));
