@@ -1,12 +1,12 @@
 <RCC>
     <qresource prefix="/">
-        <file>Recursos/4179295.jpg-c_310_420_x-f_jpg-q_x-xxyxx.jpg</file>
-        <file>Recursos/5059871.jpg</file>
-        <file>Recursos/5298328.jpg</file>
-        <file>Recursos/Godzilla_vs_Kong-370227109-large.jpg</file>
-        <file>Recursos/sillon.png</file>
-        <file>Recursos/Recurso 3@4x.png</file>
-        <file>Recursos/041_m.jpg</file>
-        <file>Cine-Mejorado_en.qm</file>
+        <file>../../../Documents/UPS GEOVANNY/7. SEPTIMO SEMESTRE/POO/Cine-Mejorado/Recursos/041_m.jpg</file>
+        <file>../../../Documents/UPS GEOVANNY/7. SEPTIMO SEMESTRE/POO/Cine-Mejorado/Recursos/4179295.jpg-c_310_420_x-f_jpg-q_x-xxyxx.jpg</file>
+        <file>../../../Documents/UPS GEOVANNY/7. SEPTIMO SEMESTRE/POO/Cine-Mejorado/Recursos/5059871.jpg</file>
+        <file>../../../Documents/UPS GEOVANNY/7. SEPTIMO SEMESTRE/POO/Cine-Mejorado/Recursos/5298328.jpg</file>
+        <file>../../../Documents/UPS GEOVANNY/7. SEPTIMO SEMESTRE/POO/Cine-Mejorado/Recursos/Avengers-4-fan-poster-9.webp</file>
+        <file>../../../Documents/UPS GEOVANNY/7. SEPTIMO SEMESTRE/POO/Cine-Mejorado/Recursos/Godzilla_vs_Kong-370227109-large.jpg</file>
+        <file>../../../Documents/UPS GEOVANNY/7. SEPTIMO SEMESTRE/POO/Cine-Mejorado/Recursos/Recurso 3@4x.png</file>
+        <file>../../../Documents/UPS GEOVANNY/7. SEPTIMO SEMESTRE/POO/Cine-Mejorado/Recursos/sillon.png</file>
     </qresource>
 </RCC>

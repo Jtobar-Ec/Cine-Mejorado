@@ -12,6 +12,7 @@
 
 #include "compra.h"
 #include "factura.h"
+#include "ventanap.h"
 
 #define IVA 12
 
@@ -35,6 +36,8 @@ private slots:
     void on_actionNuevo_triggered();
 
     void on_btnFactura_pressed();
+
+    void on_actionRegresar_triggered();
 
 private:
     Ui::Sala *ui;

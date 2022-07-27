@@ -31,6 +31,7 @@ void VentanaP::on_pbCompra1_clicked()
 {
     Sala *ventana = new Sala;
     ventana->show();
+    close();
 }
 
 
@@ -38,6 +39,7 @@ void VentanaP::on_pbCompra2_clicked()
 {
     Sala *ventana = new Sala;
     ventana->show();
+     close();
 }
 
 
@@ -45,12 +47,14 @@ void VentanaP::on_pbCompra3_clicked()
 {
     Sala *ventana = new Sala;
     ventana->show();
+     close();
 }
 
 void VentanaP::on_pbCompra4_clicked()
 {
     Sala *ventana = new Sala;
     ventana->show();
+     close();
 }
 
 
@@ -58,5 +62,6 @@ void VentanaP::on_pbComprar5_clicked()
 {
     Sala *ventana = new Sala;
     ventana->show();
+     close();
 }
 

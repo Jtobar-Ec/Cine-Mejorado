@@ -55,7 +55,7 @@
          <widget class="QCheckBox" name="A1">
           <property name="geometry">
            <rect>
-            <x>10</x>
+            <x>50</x>
             <y>40</y>
             <width>121</width>
             <height>71</height>
@@ -71,7 +71,7 @@
          <widget class="QCheckBox" name="A2">
           <property name="geometry">
            <rect>
-            <x>140</x>
+            <x>170</x>
             <y>40</y>
             <width>121</width>
             <height>71</height>
@@ -87,7 +87,7 @@
          <widget class="QCheckBox" name="A3">
           <property name="geometry">
            <rect>
-            <x>260</x>
+            <x>290</x>
             <y>40</y>
             <width>121</width>
             <height>71</height>
@@ -103,7 +103,7 @@
          <widget class="QCheckBox" name="A4">
           <property name="geometry">
            <rect>
-            <x>390</x>
+            <x>410</x>
             <y>40</y>
             <width>121</width>
             <height>71</height>
@@ -119,8 +119,8 @@
          <widget class="QCheckBox" name="B1">
           <property name="geometry">
            <rect>
-            <x>10</x>
-            <y>150</y>
+            <x>50</x>
+            <y>140</y>
             <width>121</width>
             <height>71</height>
            </rect>
@@ -135,8 +135,8 @@
          <widget class="QCheckBox" name="B2">
           <property name="geometry">
            <rect>
-            <x>140</x>
-            <y>150</y>
+            <x>170</x>
+            <y>140</y>
             <width>121</width>
             <height>71</height>
            </rect>
@@ -151,8 +151,8 @@
          <widget class="QCheckBox" name="B3">
           <property name="geometry">
            <rect>
-            <x>260</x>
-            <y>150</y>
+            <x>290</x>
+            <y>140</y>
             <width>121</width>
             <height>71</height>
            </rect>
@@ -167,8 +167,8 @@
          <widget class="QCheckBox" name="B4">
           <property name="geometry">
            <rect>
-            <x>390</x>
-            <y>150</y>
+            <x>410</x>
+            <y>140</y>
             <width>121</width>
             <height>71</height>
            </rect>
@@ -183,8 +183,8 @@
          <widget class="QCheckBox" name="C1">
           <property name="geometry">
            <rect>
-            <x>10</x>
-            <y>260</y>
+            <x>50</x>
+            <y>250</y>
             <width>121</width>
             <height>71</height>
            </rect>
@@ -199,8 +199,8 @@
          <widget class="QCheckBox" name="C2">
           <property name="geometry">
            <rect>
-            <x>400</x>
-            <y>250</y>
+            <x>420</x>
+            <y>240</y>
             <width>121</width>
             <height>71</height>
            </rect>
@@ -253,6 +253,160 @@ background-color: rgb(0, 0, 0);
            <string>PANTALLA</string>
           </property>
          </widget>
+         <widget class="QLabel" name="label_17">
+          <property name="geometry">
+           <rect>
+            <x>100</x>
+            <y>10</y>
+            <width>21</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Rockwell Nova</family>
+            <pointsize>16</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 0);</string>
+          </property>
+          <property name="text">
+           <string>1</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_18">
+          <property name="geometry">
+           <rect>
+            <x>220</x>
+            <y>10</y>
+            <width>21</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Rockwell Nova</family>
+            <pointsize>16</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 0);</string>
+          </property>
+          <property name="text">
+           <string>2</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_19">
+          <property name="geometry">
+           <rect>
+            <x>350</x>
+            <y>10</y>
+            <width>21</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Rockwell Nova</family>
+            <pointsize>16</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 0);</string>
+          </property>
+          <property name="text">
+           <string>3</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_20">
+          <property name="geometry">
+           <rect>
+            <x>460</x>
+            <y>10</y>
+            <width>21</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Rockwell Nova</family>
+            <pointsize>16</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 0);</string>
+          </property>
+          <property name="text">
+           <string>4</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_21">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>60</y>
+            <width>21</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Rockwell Nova</family>
+            <pointsize>16</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 0);</string>
+          </property>
+          <property name="text">
+           <string>A</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_22">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>160</y>
+            <width>21</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Rockwell Nova</family>
+            <pointsize>16</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 0);</string>
+          </property>
+          <property name="text">
+           <string>B</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_23">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>280</y>
+            <width>21</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Rockwell Nova</family>
+            <pointsize>16</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 0);</string>
+          </property>
+          <property name="text">
+           <string>C</string>
+          </property>
+         </widget>
         </widget>
        </item>
       </layout>
@@ -282,57 +436,10 @@ background-color: rgb(0, 0, 0);
         <string>Boleto</string>
        </property>
        <layout class="QGridLayout" name="gridLayout_3">
-        <item row="6" column="0">
-         <widget class="QLabel" name="label_9">
-          <property name="styleSheet">
-           <string notr="true">color: rgb(0, 0, 0);</string>
-          </property>
+        <item row="3" column="1">
+         <widget class="QLabel" name="outPrecio">
           <property name="text">
-           <string>TOTAL</string>
-          </property>
-         </widget>
-        </item>
-        <item row="0" column="0">
-         <widget class="QLabel" name="label_3">
-          <property name="styleSheet">
-           <string notr="true">color: rgb(0, 0, 0);</string>
-          </property>
-          <property name="text">
-           <string>Horario</string>
-          </property>
-         </widget>
-        </item>
-        <item row="5" column="0">
-         <widget class="QLabel" name="label_8">
-          <property name="styleSheet">
-           <string notr="true">color: rgb(0, 0, 0);</string>
-          </property>
-          <property name="text">
-           <string>IVA</string>
-          </property>
-         </widget>
-        </item>
-        <item row="1" column="1">
-         <widget class="QSpinBox" name="Adultos">
-          <property name="maximum">
-           <number>10</number>
-          </property>
-         </widget>
-        </item>
-        <item row="4" column="0">
-         <widget class="QLabel" name="label_7">
-          <property name="styleSheet">
-           <string notr="true">color: rgb(0, 0, 0);</string>
-          </property>
-          <property name="text">
-           <string>Subtotal</string>
-          </property>
-         </widget>
-        </item>
-        <item row="2" column="1">
-         <widget class="QSpinBox" name="NInos">
-          <property name="maximum">
-           <number>10</number>
+           <string>0.0</string>
           </property>
          </widget>
         </item>
@@ -343,30 +450,20 @@ background-color: rgb(0, 0, 0);
           </property>
          </widget>
         </item>
+        <item row="6" column="1">
+         <widget class="QLabel" name="outIva">
+          <property name="text">
+           <string>0.0</string>
+          </property>
+         </widget>
+        </item>
         <item row="3" column="0">
          <widget class="QLabel" name="label">
           <property name="styleSheet">
            <string notr="true">color: rgb(0, 0, 0);</string>
           </property>
           <property name="text">
-           <string>Precio</string>
-          </property>
-         </widget>
-        </item>
-        <item row="2" column="0">
-         <widget class="QLabel" name="label_6">
-          <property name="styleSheet">
-           <string notr="true">color: rgb(0, 0, 0);</string>
-          </property>
-          <property name="text">
-           <string>Niños</string>
-          </property>
-         </widget>
-        </item>
-        <item row="5" column="1">
-         <widget class="QLabel" name="outIva">
-          <property name="text">
-           <string>0.0</string>
+           <string>Precio Adultos:</string>
           </property>
          </widget>
         </item>
@@ -380,22 +477,93 @@ background-color: rgb(0, 0, 0);
           </property>
          </widget>
         </item>
-        <item row="4" column="1">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_3">
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);</string>
+          </property>
+          <property name="text">
+           <string>Horario</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QSpinBox" name="NInos">
+          <property name="maximum">
+           <number>10</number>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="1">
          <widget class="QLabel" name="outSubtotal">
           <property name="text">
            <string>0.0</string>
           </property>
          </widget>
         </item>
-        <item row="3" column="1">
-         <widget class="QLabel" name="outPrecio">
+        <item row="6" column="0">
+         <widget class="QLabel" name="label_8">
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);</string>
+          </property>
+          <property name="text">
+           <string>IVA:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="1">
+         <widget class="QLabel" name="outTotal">
           <property name="text">
            <string>0.0</string>
           </property>
          </widget>
         </item>
-        <item row="6" column="1">
-         <widget class="QLabel" name="outTotal">
+        <item row="5" column="0">
+         <widget class="QLabel" name="label_7">
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);</string>
+          </property>
+          <property name="text">
+           <string>Subtotal:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QSpinBox" name="Adultos">
+          <property name="maximum">
+           <number>10</number>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="0">
+         <widget class="QLabel" name="label_9">
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);</string>
+          </property>
+          <property name="text">
+           <string>TOTAL:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_6">
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);</string>
+          </property>
+          <property name="text">
+           <string>Niños</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="label_15">
+          <property name="text">
+           <string>Precio niños:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QLabel" name="outPninos">
           <property name="text">
            <string>0.0</string>
           </property>
@@ -517,6 +685,7 @@ background-color: rgb(0, 0, 0);
      <string>Archivo</string>
     </property>
     <addaction name="actionNuevo"/>
+    <addaction name="actionRegresar"/>
    </widget>
    <addaction name="menuArchivo"/>
   </widget>
@@ -524,6 +693,11 @@ background-color: rgb(0, 0, 0);
   <action name="actionNuevo">
    <property name="text">
     <string>Nuevo</string>
+   </property>
+  </action>
+  <action name="actionRegresar">
+   <property name="text">
+    <string>Regresar</string>
    </property>
   </action>
  </widget>

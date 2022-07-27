@@ -1,11 +1,12 @@
 #include "compra.h"
 
-Compra::Compra(int codigo, const QString &hora, int minuto,float precio,float precio_infantil, QObject *parent) : QObject(parent),
+Compra::Compra(int codigo, const QString &hora, int minuto,float precio,float precio_infantil,int sala, QObject *parent) : QObject(parent),
         m_codigo(codigo),
         m_Hora(hora),
         m_Minuto(minuto),
         m_Precio(precio),
-        m_PrecioInfantil(precio_infantil)
+        m_PrecioInfantil(precio_infantil),
+        m_sala(sala)
 {}
 
 int Compra::codigo() const
@@ -56,4 +57,14 @@ float Compra::precioInfa() const
 void Compra::setPrecioinfa(float newPrecioinfa)
 {
     m_PrecioInfantil = newPrecioinfa;
+}
+
+int Compra::sala() const
+{
+    return m_sala;
+}
+
+void Compra::setSala(float newSala)
+{
+    m_sala = newSala;
 }

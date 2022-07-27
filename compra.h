@@ -11,10 +11,11 @@ private:
     int m_Minuto;
     float m_Precio;
     float m_PrecioInfantil;
+    int m_sala;
 
 public:
     explicit Compra(QObject *parent = nullptr);
-    Compra(int codigo, const QString &hora, int minuto,float precio,float precio_infantil, QObject *parent = nullptr);
+    Compra(int codigo, const QString &hora, int minuto,float precio,float precio_infantil,int sala, QObject *parent = nullptr);
 
     int codigo() const;
     void setCodigo(int newCodigo);
@@ -26,6 +27,9 @@ public:
     void setPrecio(float newPrecio);
     float precioInfa() const;
     void setPrecioinfa(float newPrecioinfa);
+    int sala() const;
+    void setSala(float newSala);
+
 
 signals:
 };

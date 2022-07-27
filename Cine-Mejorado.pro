@@ -45,8 +45,8 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 RESOURCES += \
-    Recursos.qrc
-    Cine-Mejorado_en.qm
+    Recurso.qrc
 
 DISTFILES += \
-    Cine-Mejorado_en.qm
+    Cine-Mejorado_en.ts
+

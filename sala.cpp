@@ -20,11 +20,12 @@ Sala::Sala(QWidget *parent) :
         ui->InHorario->addItem(p->Hora()+":"+QString::number(p->minuto()));
     }
     // Configurar cabecera de la tabla
-    QStringList cabecera = {"ID", tr("N.Personas"), tr("Asientos"), tr("Horario"), tr("Subtotal")};
-    ui->OutPelis->setColumnCount(5);
-    ui->OutPelis->setHorizontalHeaderLabels(cabecera);
-    // Establecer el subtotal a 0
-    m_subtotal = 0;
+        QStringList cabecera = {"ID", tr("N.Personas"), tr("Asientos"), tr("Horario"), tr("Sala"), tr("Subtotal")};
+        ui->OutPelis->setColumnCount(6);
+        ui->OutPelis->setHorizontalHeaderLabels(cabecera);
+        // Establecer el subtotal a 0
+        m_subtotal = 0;
+
 
 }
 Sala::~Sala()
@@ -52,16 +53,19 @@ void Sala::cargarHorarios()
 
             }
             QStringList datos = linea.split(";");
-            QString minuto = datos.at(2);
-            QString precio = datos.at(3);
-            QString precioinfa = datos.at(4);
-            int min= minuto.toInt();
-            float pre = precio.toFloat();
-            float preinfa = precioinfa.toFloat();
-            int id= datos.at(0).toInt();
-            m_Horarios.append(new Compra(id,datos.at(1),min,pre,preinfa));
-        }
-        archivo.close();
+                        QString minuto = datos.at(2);
+                        QString precio = datos.at(3);
+                        QString precioinfa = datos.at(4);
+                        QString sala = datos.at(5);
+                        int min= minuto.toInt();
+                        float pre = precio.toFloat();
+                        float preinfa = precioinfa.toFloat();
+                        int salas = sala.toInt();
+                        int id= datos.at(0).toInt();
+                        m_Horarios.append(new Compra(id,datos.at(1),min,pre,preinfa,salas));
+                    }
+                    archivo.close();
+
 
     }else{
         qDebug()<<tr("No se pudo abrir el archivo");
@@ -84,16 +88,18 @@ void Sala::calcular(float stProducto)
 void Sala::enviarDatos()
 {
     int filas = ui->OutPelis->rowCount();
-    QString detalles = "";
-    while (m_contador!=filas) {
-        detalles+=ui->OutPelis->item(m_contador,0)->text()+"\n  \n\n" +
-                ui->OutPelis->item(m_contador,1)->text()+"  \n\n\n" +
-                ui->OutPelis->item(m_contador,2)->text()+"  \n\n\n" +
-                ui->OutPelis->item(m_contador,3)->text()+"  \n\n" +
-                ui->OutPelis->item(m_contador,4)->text()+"  ";
-        m_contador++;
-    }
-    m_detalles = detalles;
+     QString detalles = "";
+     while (m_contador!=filas) {
+         detalles+=ui->OutPelis->item(m_contador,0)->text()+"\n  \n\n" +
+                 ui->OutPelis->item(m_contador,1)->text()+"  \n\n\n" +
+                 ui->OutPelis->item(m_contador,2)->text()+"  \n\n\n" +
+                 ui->OutPelis->item(m_contador,3)->text()+"  \n\n\n" +
+                 ui->OutPelis->item(m_contador,4)->text()+"  \n\n" +
+                 ui->OutPelis->item(m_contador,5)->text()+"  \n\n";
+         m_contador++;
+     }
+     m_detalles = detalles;
+
 }
 
 bool Sala::validarCampos()
@@ -306,11 +312,14 @@ void Sala::on_OutCompra_clicked()
     C2=ui->C2->isChecked();
 
     // Agregar los datos a la tabla
-    int fila = ui->OutPelis->rowCount();
-    ui->OutPelis->insertRow(fila);
-    ui->OutPelis->setItem(fila, 0, new QTableWidgetItem(QString::number(i)));
-    ui->OutPelis->setItem(fila, 1, new QTableWidgetItem(QString::number((AdulCAn+NinCan),'f',0)));
-    msg="";
+        int fila = ui->OutPelis->rowCount();
+        ui->OutPelis->insertRow(fila);
+        //ID
+        ui->OutPelis->setItem(fila, 0, new QTableWidgetItem(QString::number(i)));
+        //Numero de personas
+        ui->OutPelis->setItem(fila, 1, new QTableWidgetItem(QString::number((AdulCAn+NinCan),'f',0)));
+        msg="";
+
 
     if (A1){
         msg+="A1  ";
@@ -345,14 +354,19 @@ void Sala::on_OutCompra_clicked()
 
 
     ui->OutPelis->setItem(fila,2,new QTableWidgetItem(msg));
-    ui->OutPelis->setItem(fila, 3, new QTableWidgetItem(p->Hora()+":"+QString::number(p->minuto())));
-    ui->OutPelis->setItem(fila, 4, new QTableWidgetItem(QString::number(resultado,'f',2)));
+        //Horario
+        ui->OutPelis->setItem(fila, 3, new QTableWidgetItem(p->Hora()+":"+QString::number(p->minuto())));
+        //Salas
+        ui->OutPelis->setItem(fila, 4, new QTableWidgetItem(QString::number(p->sala())));
+        //Precio
+        ui->OutPelis->setItem(fila, 5, new QTableWidgetItem(QString::number(resultado,'f',2)));
 
-    //Limpiar valores
-    ui->Adultos->setValue(0);
-    ui->NInos->setValue(0);
-    ui->InHorario->setFocus();
-    calcular(resultado);
+        //Limpiar valores
+        ui->Adultos->setValue(0);
+        ui->NInos->setValue(0);
+        ui->InHorario->setFocus();
+        calcular(resultado);
+
 
 }
 
@@ -365,9 +379,12 @@ void Sala::on_actionEliminar_triggered()
 void Sala::on_InHorario_currentIndexChanged(int index)
 {
     float precio = m_Horarios.at(index)->precio();
-    ui->outPrecio->setText("$ "+QString::number(precio,'f',2));
-    ui->Adultos->setValue(0);
-    ui->NInos->setValue(0);
+      float precio_inf = m_Horarios.at(index)->precioInfa();
+      ui->outPrecio->setText("$ "+QString::number(precio,'f',2));
+      ui->outPninos->setText("$ "+QString::number(precio_inf,'f',2));
+      ui->Adultos->setValue(0);
+      ui->NInos->setValue(0);
+
 }
 
 
@@ -428,3 +445,11 @@ void Sala::on_btnFactura_pressed()
             }
     }
  }
+
+void Sala::on_actionRegresar_triggered()
+{
+    VentanaP *regre = new VentanaP;
+       regre->show();
+       close();
+}
+

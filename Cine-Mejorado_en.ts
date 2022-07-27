@@ -6,7 +6,7 @@
     <message>
         <location filename="acerca.ui" line="14"/>
         <source>Dialog</source>
-        <translation></translation>
+        <translation>About</translation>
     </message>
     <message>
         <location filename="acerca.ui" line="26"/>
@@ -21,7 +21,7 @@
     <message>
         <location filename="acerca.cpp" line="9"/>
         <source>Informacion</source>
-        <translation></translation>
+        <translation>Information</translation>
     </message>
 </context>
 <context>
@@ -59,7 +59,7 @@
     <message>
         <location filename="factura.ui" line="329"/>
         <source>Asientos:</source>
-        <translation>Seating:</translation>
+        <translation>Seanting:</translation>
     </message>
     <message>
         <location filename="factura.ui" line="348"/>
@@ -68,13 +68,13 @@
     </message>
     <message>
         <location filename="factura.ui" line="367"/>
-        <source>Subtotal:</source>
-        <translation>Subtotal:</translation>
+        <source>Sala:</source>
+        <translation>Room:</translation>
     </message>
     <message>
-        <location filename="factura.ui" line="380"/>
-        <source>TextLabel</source>
-        <translation></translation>
+        <location filename="factura.ui" line="386"/>
+        <source>Subtotal:</source>
+        <translation>Subtotal:</translation>
     </message>
 </context>
 <context>
@@ -82,8 +82,9 @@
     <message>
         <location filename="Sala.ui" line="14"/>
         <location filename="Sala.ui" line="24"/>
+        <location filename="sala.cpp" line="23"/>
         <source>Sala</source>
-        <translation>Room</translation>
+        <translation>ROOM</translation>
     </message>
     <message>
         <location filename="Sala.ui" line="33"/>
@@ -101,94 +102,139 @@
         <translation>SCREEN</translation>
     </message>
     <message>
-        <location filename="Sala.ui" line="282"/>
+        <location filename="Sala.ui" line="275"/>
+        <source>1</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="Sala.ui" line="297"/>
+        <source>2</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="Sala.ui" line="319"/>
+        <source>3</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="Sala.ui" line="341"/>
+        <source>4</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="Sala.ui" line="363"/>
+        <source>A</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="Sala.ui" line="385"/>
+        <source>B</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="Sala.ui" line="407"/>
+        <source>C</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="Sala.ui" line="436"/>
         <source>Boleto</source>
         <translation>Ticket</translation>
     </message>
     <message>
-        <location filename="Sala.ui" line="291"/>
-        <source>TOTAL</source>
-        <translation>TOTAL</translation>
+        <location filename="Sala.ui" line="442"/>
+        <location filename="Sala.ui" line="456"/>
+        <location filename="Sala.ui" line="500"/>
+        <location filename="Sala.ui" line="517"/>
+        <location filename="Sala.ui" line="568"/>
+        <source>0.0</source>
+        <translation>0.0</translation>
     </message>
     <message>
-        <location filename="Sala.ui" line="301"/>
+        <location filename="Sala.ui" line="466"/>
+        <source>Precio Adultos:</source>
+        <translation>Price Adult:</translation>
+    </message>
+    <message>
+        <location filename="Sala.ui" line="476"/>
+        <source>Adulto</source>
+        <translation>Adult</translation>
+    </message>
+    <message>
+        <location filename="Sala.ui" line="486"/>
         <location filename="sala.cpp" line="23"/>
         <source>Horario</source>
         <translation>Schedule</translation>
     </message>
     <message>
-        <location filename="Sala.ui" line="311"/>
-        <source>IVA</source>
-        <translation>IVA</translation>
+        <location filename="Sala.ui" line="510"/>
+        <source>IVA:</source>
+        <translation>IVA:</translation>
     </message>
     <message>
-        <location filename="Sala.ui" line="328"/>
-        <location filename="sala.cpp" line="23"/>
-        <source>Subtotal</source>
-        <translation>Subtotal</translation>
+        <location filename="Sala.ui" line="527"/>
+        <source>Subtotal:</source>
+        <translation>Subotal:</translation>
     </message>
     <message>
-        <location filename="Sala.ui" line="352"/>
-        <source>Precio</source>
-        <translation>Price</translation>
+        <location filename="Sala.ui" line="544"/>
+        <source>TOTAL:</source>
+        <translation>TOTAL:</translation>
     </message>
     <message>
-        <location filename="Sala.ui" line="362"/>
+        <location filename="Sala.ui" line="554"/>
         <source>Niños</source>
         <translation>Children</translation>
     </message>
     <message>
-        <location filename="Sala.ui" line="369"/>
-        <location filename="Sala.ui" line="386"/>
-        <location filename="Sala.ui" line="393"/>
-        <location filename="Sala.ui" line="400"/>
-        <source>0.0</source>
-        <translation>0.0</translation>
+        <location filename="Sala.ui" line="561"/>
+        <source>Precio niños:</source>
+        <translation>Price Children:</translation>
     </message>
     <message>
-        <location filename="Sala.ui" line="379"/>
-        <source>Adulto</source>
-        <translation>Adult</translation>
-    </message>
-    <message>
-        <location filename="Sala.ui" line="432"/>
+        <location filename="Sala.ui" line="600"/>
         <source>Datos de Factura</source>
         <translation>Invoice details</translation>
     </message>
     <message>
-        <location filename="Sala.ui" line="441"/>
+        <location filename="Sala.ui" line="609"/>
         <source>Nombre:</source>
         <translation>Name:</translation>
     </message>
     <message>
-        <location filename="Sala.ui" line="454"/>
+        <location filename="Sala.ui" line="622"/>
         <source>CI:</source>
         <translation>CI:</translation>
     </message>
     <message>
-        <location filename="Sala.ui" line="467"/>
+        <location filename="Sala.ui" line="635"/>
         <source>Teléfono:</source>
         <translation>Phone:</translation>
     </message>
     <message>
-        <location filename="Sala.ui" line="480"/>
+        <location filename="Sala.ui" line="648"/>
         <source>Correo:</source>
         <translation>Email:</translation>
     </message>
     <message>
-        <location filename="Sala.ui" line="493"/>
+        <location filename="Sala.ui" line="661"/>
         <source>Dirección:</source>
         <translation>Direction:</translation>
     </message>
     <message>
-        <location filename="Sala.ui" line="517"/>
+        <location filename="Sala.ui" line="685"/>
         <source>Archivo</source>
         <translation>File</translation>
     </message>
     <message>
-        <location filename="Sala.ui" line="526"/>
+        <location filename="Sala.ui" line="695"/>
         <source>Nuevo</source>
         <translation>New</translation>
+    </message>
+    <message>
+        <location filename="Sala.ui" line="700"/>
+        <source>Regresar</source>
+        <translation>Return</translation>
     </message>
     <message>
         <location filename="sala.cpp" line="23"/>
@@ -198,10 +244,15 @@
     <message>
         <location filename="sala.cpp" line="23"/>
         <source>Asientos</source>
-        <translation>Seating</translation>
+        <translation>Armchairs</translation>
     </message>
     <message>
-        <location filename="sala.cpp" line="67"/>
+        <location filename="sala.cpp" line="23"/>
+        <source>Subtotal</source>
+        <translation>Subtotal</translation>
+    </message>
+    <message>
+        <location filename="sala.cpp" line="71"/>
         <source>No se pudo abrir el archivo</source>
         <translation>The file could not be opened</translation>
     </message>
@@ -211,7 +262,7 @@
     <message>
         <location filename="ventanap.ui" line="14"/>
         <source>MainWindow</source>
-        <translation></translation>
+        <translation>WELCOME</translation>
     </message>
     <message>
         <location filename="ventanap.ui" line="49"/>
@@ -225,7 +276,7 @@
     </message>
     <message>
         <location filename="ventanap.ui" line="162"/>
-        <source>Avengers EndGame</source>
+        <source>Avengers End Game</source>
         <translation></translation>
     </message>
     <message>
@@ -244,8 +295,8 @@
         <location filename="ventanap.ui" line="233"/>
         <location filename="ventanap.ui" line="268"/>
         <location filename="ventanap.ui" line="281"/>
-        <source>SIPNOSIS: ............................................</source>
-        <translation>SYPNOSIS: .............................................</translation>
+        <source>SINOPSIS:</source>
+        <translation>SYNOPSIS:</translation>
     </message>
     <message>
         <location filename="ventanap.ui" line="255"/>
@@ -280,17 +331,17 @@
     <message>
         <location filename="ventanap.ui" line="370"/>
         <source>SALA 2</source>
-        <translation>Room 2</translation>
+        <translation>ROOM 2</translation>
     </message>
     <message>
         <location filename="ventanap.ui" line="394"/>
         <source>SALA 3</source>
-        <translation>Room 3</translation>
+        <translation>ROOM 3</translation>
     </message>
     <message>
         <location filename="ventanap.ui" line="418"/>
         <source>SALA 1</source>
-        <translation>Room 1</translation>
+        <translation>ROOM 1</translation>
     </message>
     <message>
         <location filename="ventanap.ui" line="431"/>
@@ -299,8 +350,8 @@
     </message>
     <message>
         <location filename="ventanap.ui" line="450"/>
-        <source>toman las riendas de una investigación relacionada con una serie de asesinatos que albergan ciertos paralelismos con el sangriento.</source>
-        <translation>Take the reins of an investigation related to a series of murders that harbor certain parallels with the bloody one.</translation>
+        <source>Toman las riendas de una investigación relacionada con una serie de asesinatos que albergan ciertos paralelismos con el sangriento.</source>
+        <translation>They take the reins of an investigation related to a series of murders that harbor certain parallels with the bloody one.</translation>
     </message>
     <message>
         <location filename="ventanap.ui" line="469"/>
