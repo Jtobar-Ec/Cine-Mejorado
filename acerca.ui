@@ -22,15 +22,28 @@
        <height>40</height>
       </size>
      </property>
+     <property name="font">
+      <font>
+       <family>Rockwell Nova</family>
+       <pointsize>22</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
      <property name="text">
-      <string>CINEMANIASALE v0.1</string>
+      <string>MAXCINE v0.1</string>
      </property>
     </widget>
    </item>
    <item row="1" column="0">
     <widget class="QLabel" name="label_3">
+     <property name="font">
+      <font>
+       <family>Rockwell Nova</family>
+      </font>
+     </property>
      <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Cinemaniasale es una aplicacion de un cine para que asi el usuario le sea facil utilizar la aplicacion y que no tenga problemas al utilizarlo&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Autores:&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Tobar Soberon Justin Edu &amp;lt;&lt;/span&gt;&lt;span style=&quot; font-size:10pt; text-decoration: underline; color:#0000ff;&quot;&gt;jtobars3@est.ups.edu.ec&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Byron Geovanny Jaramillo Namicela &amp;lt;&lt;/span&gt;&lt;span style=&quot; font-size:10pt; text-decoration: underline; color:#0000ff;&quot;&gt;bjaramillon1@est.ups.edu.ec&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Jorge Sebastián Reinoso Reyes &amp;lt;&lt;/span&gt;&lt;span style=&quot; font-size:10pt; text-decoration: underline; color:#0000ff;&quot;&gt;jreinosor1@est.ups.edu.ec&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Hanner Joan Delgado Espinoza &amp;lt;&lt;/span&gt;&lt;span style=&quot; font-size:10pt; text-decoration: underline; color:#0000ff;&quot;&gt;hdelgadoe@est.ups.edu.ec&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;Universidad Politecnica Salesiana&lt;/p&gt;&lt;p&gt;Estudiantes de la carrera de computacion &lt;/p&gt;&lt;p&gt;Todos los derechos reservados (r) 2022&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;MAXCINE es una aplicacion de un cine para que asi el usuario le sea facil utilizar la aplicacion y que no tenga problemas al utilizarlo&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Autores:&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Tobar Soberon Justin Edu &amp;lt;&lt;/span&gt;&lt;span style=&quot; font-size:10pt; text-decoration: underline; color:#0000ff;&quot;&gt;jtobars3@est.ups.edu.ec&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Byron Geovanny Jaramillo Namicela &amp;lt;&lt;/span&gt;&lt;span style=&quot; font-size:10pt; text-decoration: underline; color:#0000ff;&quot;&gt;bjaramillon1@est.ups.edu.ec&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Jorge Sebastián Reinoso Reyes &amp;lt;&lt;/span&gt;&lt;span style=&quot; font-size:10pt; text-decoration: underline; color:#0000ff;&quot;&gt;jreinosor1@est.ups.edu.ec&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Hanner Joan Delgado Espinoza &amp;lt;&lt;/span&gt;&lt;span style=&quot; font-size:10pt; text-decoration: underline; color:#0000ff;&quot;&gt;hdelgadoe@est.ups.edu.ec&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;Universidad Politecnica Salesiana&lt;/p&gt;&lt;p&gt;Estudiantes de la carrera de computacion &lt;/p&gt;&lt;p&gt;Todos los derechos reservados (r) 2022&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
    </item>
