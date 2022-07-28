@@ -1,4 +1,4 @@
-## BIENVENIDO AL REPOSITORIO DE CINEMANIASALE :computer:
+## BIENVENIDO AL REPOSITORIO DE MAXCINE :computer:
 **Instalación**:smile::cd:
 
 -Como primer paso para ejecutar la aplicación debe realizar un git clone o descargar el archivo .zip.
