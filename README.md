@@ -10,4 +10,4 @@
 -En caso de tener dificultados con los horarios, editar en la clase sala.cpp la linea que diga "/debug/Horarios.csv" y colocar solo "/Horarios.csv".
 
 ## Introducción
-CINEMANIASALE nace de un proyecto universitario, el cual requiere una aplicación que muestre una interfaz de boletería de un cine. Para ello se aplicó los conocimientos obtenidos en la asignatura de Programación Orientada a objetos. Como tutor y guía del presente proyecto se encuentra al Ingeniero Rodrigo Tufiño.
+MAXCINE nace de un proyecto universitario, el cual requiere una aplicación que muestre una interfaz de boletería de un cine. Para ello se aplicó los conocimientos obtenidos en la asignatura de Programación Orientada a objetos. Como tutor y guía del presente proyecto se encuentra al Ingeniero Rodrigo Tufiño.
