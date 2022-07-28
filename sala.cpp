@@ -241,7 +241,6 @@ bool Sala::validarCI(QString num)
 
             nveri = total%10;
 
-
             //Numero verificador
             if(nveri==0)
             {
@@ -264,15 +263,13 @@ bool Sala::validarCI(QString num)
                     break;
                 }else
                 {
-
-                    est=false;
+                  est=false;
                     break;
                 }
             }
 
         }while(nu<100000000 || nu>9999999999 || vcedula[0]>2);
         return est;
-
 }
 
 
@@ -418,11 +415,9 @@ void Sala::on_actionNuevo_triggered()
         m_detalles="";
         m_contador=0;
 
+
+
 }
-
-
-
-
 
 void Sala::on_btnFactura_pressed()
 {
@@ -451,4 +446,51 @@ void Sala::on_actionRegresar_triggered()
        regre->show();
        close();
 }
+
+void Sala::on_btnConsumidor_released()
+{
+    QFile archivo(QDir::current().absolutePath()+"FacturaCine");
+    if(archivo.open(QFile::WriteOnly | QFile::Truncate)){
+        QTextStream salida(&archivo);
+        salida.operator<<("\n\t\t\tMAX CINE\n");
+        salida.operator<<("AV MORAN VALVERDE\n");
+        salida.operator<<("Ruc:1727072986\n");
+        salida.operator<<("Ret Factura: 001-306-30034791");
+        salida.operator<<("\n-------------------------------------------------------------------\n");
+        salida.operator<<("Datos del cliente\n\n");
+        salida.operator<<("Cliente: C/F "+m_vacio+"\t\t"+ "RUC/CI: 999999999"+m_vacio+"\n");
+        salida.operator<<("Direccion: C/F"+m_vacio+"\t\t"+ "Telefono: C/F"+ m_vacio+"\n");
+        salida.operator<<("Email: C/F"+m_vacio+"\t\t"+"\n");
+        salida.operator<<("\n-------------------------------------------------------------------\n");
+        salida.operator<<("Forma de pago: Efectivo");
+        salida.operator<<("\n-------------------------------------------------------------------\n");
+        salida.operator<<("Cantidad\tAsiento\tP.Horario\tSala\tTotal\n");
+        salida.operator<<(m_detalles);
+        salida.operator<<("\n-------------------------------------------------------------------\n");
+        salida.operator<<("Subtototal:\t\t"+("$" + QString::number(m_subtotal,'f',2))+"\n");
+        salida.operator<<("Iva: 12%  \t\t"+m_vacio+"\n");
+        salida.operator<<("TOTAL:     \t\t"+("$" + QString::number(m_total,'f',2))+"\n\n");
+        salida.operator<<("\tGracias por confiar en nosotros. ");
+
+        QMessageBox::information(this,"Guardar datos",
+                                 "Los datos han sido guardados exitosamente.");
+
+       }else{
+        QMessageBox::warning(this,
+                             "Guardar datos",
+                             "No se pudo guardar el archivo.");
+    }
+    archivo.close();
+    if(archivo.open(QFile::ReadOnly)){
+        // Crear un 'stream' de texto
+        QTextStream entrada(&archivo);
+        // Leer todo el contenido del archivo
+        QString datos = entrada.readAll();
+    Boleto *imp = new Boleto(this);
+    imp->datosboleto(datos);
+     imp->cargarBoleto();
+    imp->exec();
+}
+}
+
 

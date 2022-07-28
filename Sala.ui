@@ -35,6 +35,13 @@
         </widget>
        </item>
        <item row="1" column="1">
+        <widget class="QPushButton" name="btnConsumidor">
+         <property name="text">
+          <string>Consumidor Final</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
         <widget class="QPushButton" name="btnFactura">
          <property name="styleSheet">
           <string notr="true">color: rgb(0, 0, 0);</string>
@@ -44,7 +51,7 @@
          </property>
         </widget>
        </item>
-       <item row="0" column="0" colspan="2">
+       <item row="0" column="0" colspan="3">
         <widget class="QGroupBox" name="groupBox_4">
          <property name="styleSheet">
           <string notr="true">background-color: rgb(209, 0, 3);</string>
@@ -216,9 +223,9 @@
           <property name="geometry">
            <rect>
             <x>20</x>
-            <y>415</y>
+            <y>420</y>
             <width>501</width>
-            <height>31</height>
+            <height>51</height>
            </rect>
           </property>
           <property name="styleSheet">
@@ -226,31 +233,6 @@
           </property>
           <property name="text">
            <string/>
-          </property>
-         </widget>
-         <widget class="QLabel" name="label_4">
-          <property name="geometry">
-           <rect>
-            <x>230</x>
-            <y>420</y>
-            <width>91</width>
-            <height>20</height>
-           </rect>
-          </property>
-          <property name="font">
-           <font>
-            <pointsize>12</pointsize>
-            <weight>75</weight>
-            <bold>true</bold>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">color: rgb(255, 255, 255);
-background-color: rgb(0, 0, 0);
-</string>
-          </property>
-          <property name="text">
-           <string>PANTALLA</string>
           </property>
          </widget>
          <widget class="QLabel" name="label_17">
@@ -405,6 +387,31 @@ background-color: rgb(0, 0, 0);
           </property>
           <property name="text">
            <string>C</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_16">
+          <property name="geometry">
+           <rect>
+            <x>230</x>
+            <y>440</y>
+            <width>91</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+</string>
+          </property>
+          <property name="text">
+           <string>PANTALLA</string>
           </property>
          </widget>
         </widget>

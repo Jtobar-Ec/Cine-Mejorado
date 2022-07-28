@@ -9,6 +9,8 @@
 #include <QDateTime>
 #include <QDate>
 
+#include "boleto.h"
+
 namespace Ui {
 class Factura;
 }

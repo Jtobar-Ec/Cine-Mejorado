@@ -13,6 +13,7 @@
 #include "compra.h"
 #include "factura.h"
 #include "ventanap.h"
+#include "boleto.h"
 
 #define IVA 12
 
@@ -26,6 +27,7 @@ public:
     explicit Sala(QWidget *parent = nullptr);
     ~Sala();
 
+
 private slots:
     void on_OutCompra_clicked();
 
@@ -37,10 +39,13 @@ private slots:
 
     void on_actionRegresar_triggered();
 
+    void on_btnConsumidor_released();
+
 private:
     Ui::Sala *ui;
     QList<Compra*> m_Horarios;
     QString m_detalles;
+    QString m_vacio;
     float m_subtotal;
     float m_iva;
     float m_total;
